@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+ 
+background-size:cover;
+
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+aside {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: yellow;
+    padding: 20px;
+	font-size:20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    height:100px;
+    width:100%;
+     pdding: 5px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: pink;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    font-size:30px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height:auto;
+    }
+}
+</style>
+</head>
+<body background="h.jpg">
+
+<header>
+  <h2>PEOPLE WELFARE ENHANCEMENT SYSTEM</h2>
+</header>
+<nav>
+</nav>
+
+<section>
+  <aside>
+ <ul id="sortable">
+<li>LOGIN
+    <ul>
+    <li><a href="ad.html">ADMIN</a></li>
+    <li><a href="login.php">USER</a></li>    
+</ul>   
+</li>     
+<li>REGISTER<a href="register.php">(new user)</a>
+    
+</li> 
+<li>HELP<a href="help.html">(help)</a>    
+  </aside>
+  
+  <article>
+    <h1>ROAD REPAIRMENT SYSTEM</h1>
+    <p>This session is mainly for reporting the bad road conditions</p>
+	<h1> ELECTRICITY REPAIRMENT SYSTEM</h1>
+	<p><blockquote> you can report the issues of electricity and make the complaints online</b></blockquote></p>
+   
+  </article>
+</section>
+
+<footer>
+  <p>SAVE PUBLIC PROPERTIES</p>
+</footer>
+<marquee><h1>SAVE TODAY AND USE IT WISELY IN FUTURE</h1></marquee><br>
+</body>
+</html>
